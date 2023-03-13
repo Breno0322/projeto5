@@ -1,0 +1,90 @@
+:root {
+    --color-background: #808080;
+    --color-items-and-map-background: #281A51;
+    --color-furniture: #ffecec;
+    --color-property: #F7ECFF;
+    --color-job: #ECF0FF;
+    --color-travel: #D7F9F3;
+    --color-boat: #E2FFD4;
+    --color-motorcycle: #ffffff;
+    --color-economy: #FFF3C9;
+    --color-holiday: #FFD9C9;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+}
+
+a {
+    text-decoration: none !important;
+    color: var(--color-items-and-map-background) !important;
+}
+
+input {
+    width: 100%;
+    padding: 16px;
+}
+
+img {
+    width: 32px;
+    align-self: center;
+}
+
+#content {
+    height: 100vh;
+}
+
+.input {
+    margin-bottom: 32px;
+}
+
+.container-wrapper {
+    background: var(--color-background);
+    font-family: 'Poppins';
+    font-size: 16px;
+    border-radius: 24px;
+    padding: 50px;
+    max-width: 682px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.border {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 24px;
+    border-radius: 8px;
+    &.furniture {
+        background: var(--color-furniture);
+    
+    }
+    &.property {
+        background: var(--color-property);
+    }
+    &.job {
+        background: var(--color-job);
+    }
+    &.travel {
+        background: var(--color-travel);
+    }
+    &.boat {
+        background: var(--color-boat);
+    }
+    &.motorcycle {
+        background: var(--color-motorcycle);
+    }
+    &.economy {
+        background: var(--color-economy);
+    }
+    &.holiday {
+        background: var(--color-holiday);
+    }
+}

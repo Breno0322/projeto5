@@ -1,0 +1,131 @@
+:root {
+  --color-items-and-map-background: #281A51;
+  --color-box-shadow: #8675B4;
+  --color-border-input: #DBD5EC;
+  --color-furniture: #ffecec;
+  --color-property: #F7ECFF;
+  --color-job: #ECF0FF;
+  --color-travel: #D7F9F3;
+  --color-boat: #E2FFD4;
+  --color-motorcycle-and-map-font-and-background: #ffffff;
+  --color-box-shadow-motorcycle: rgba(41, 11, 128, 0.1);
+  --color-economy: #FFF3C9;
+  --color-holiday: #FFD9C9;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+
+a {
+  text-decoration: none !important;
+  color: var(--color-items-and-map-background) !important;
+}
+
+.container-wrapper {
+  background: var(--color-motorcycle-and-map-font-and-background);
+  font-family: "Poppins";
+  font-size: 12px;
+  border-radius: 24px;
+  padding: 50px;
+  margin: 0 auto;
+  box-shadow: 0px 14px 52px var(--color-box-shadow);
+}
+
+input {
+  width: 100%;
+  padding: 16px;
+  gap: 10px;
+  border: solid 1px var(--color-border-input);
+}
+
+img {
+  width: 32px;
+}
+
+.input-button {
+  margin-bottom: 32px;
+  gap: 10px;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+}
+
+.border-radius {
+  border-radius: 4px;
+}
+
+.search-map {
+  background: var(--color-items-and-map-background);
+  color: var(--color-motorcycle-and-map-font-and-background) !important;
+  padding: 10px;
+}
+
+.border {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 24px;
+  margin-bottom: 16px;
+  gap: 4px;
+  border-radius: 8px;
+}
+
+.border.furniture {
+  background: var(--color-furniture);
+}
+.border.property {
+  background: var(--color-property);
+}
+.border.job {
+  background: var(--color-job);
+}
+.border.travel {
+  background: var(--color-travel);
+}
+.border.boat {
+  background: var(--color-boat);
+}
+.border.motorcycle {
+  background: var(--color-motorcycle-and-map-font);
+}
+.border.economy {
+  background: var(--color-economy);
+}
+.border.holiday {
+  background: var(--color-holiday);
+}
+
+@media (min-width: 992px) {
+  #content {
+    height: 100vh;
+  }
+
+  .container-wrapper {
+    max-width: 682px;
+    font-size: 16px;
+    gap: 10px;
+  }
+
+  .border {
+    margin-bottom: 0px;
+  }
+
+  .search-map {
+    padding: 12px;
+  }
+  
+  .border:hover {
+    box-shadow: 0px 14px 16px var(--color-box-shadow-motorcycle);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
