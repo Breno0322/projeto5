@@ -38,7 +38,7 @@ input {
 }
 
 img {
-  width: 32px;
+  width: 22px;
   align-self: center;
 }
 
@@ -58,6 +58,7 @@ img {
   display: flex;
   padding: 16px;
   justify-content: center;
+  height: 58px;
 }
 
 .search-map {
