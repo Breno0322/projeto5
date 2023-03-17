@@ -1,14 +1,18 @@
 :root {
-    --color-background: #808080;
-    --color-items-and-map-background: #281A51;
+    --color-items-and-map-background: #281a51;
+    --color-box-shadow: #8675B4;
+    --color-border-input: #DBD5EC;
     --color-furniture: #ffecec;
     --color-property: #F7ECFF;
     --color-job: #ECF0FF;
     --color-travel: #D7F9F3;
     --color-boat: #E2FFD4;
-    --color-motorcycle: #ffffff;
+    --color-hover-map-font-and-background: #ffffff;
+    --color-hover-button: #1d0a55;
+    --color-box-shadow-motorcycle: rgba(41, 11, 128, 0.1);
     --color-economy: #FFF3C9;
     --color-holiday: #FFD9C9;
+    --color-motorcycle: rgb(255, 189, 189);
 }
 
 * {
@@ -29,6 +33,8 @@ a {
 input {
     width: 100%;
     padding: 16px;
+    gap: 10px;
+    border: solid 1px var(--color-border-input);
 }
 
 img {
@@ -40,51 +46,118 @@ img {
     height: 100vh;
 }
 
-.input {
-    margin-bottom: 32px;
+.input-button {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button {
+    background: var(--color-items-and-map-background);
+    border-radius: 4px;
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+}
+
+.search-map {
+    color: var(--color-hover-map-font-and-background) !important;
+    gap: 10px;
 }
 
 .container-wrapper {
-    background: var(--color-background);
+    background: var(--color-hover-map-font-and-background);
     font-family: 'Poppins';
     font-size: 16px;
     border-radius: 24px;
-    padding: 50px;
+    padding: 32px;
     max-width: 682px;
     display: flex;
     margin: 0 auto;
     flex-direction: column;
+    gap: 10px;
+    box-shadow: 0px 14px 52px var(--color-box-shadow);
 }
 
 .border {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    text-align: center;
-    padding: 24px;
+    padding: 16px;
     border-radius: 8px;
+    margin-bottom: 16px;
+
     &.furniture {
         background: var(--color-furniture);
-    
     }
+
     &.property {
         background: var(--color-property);
     }
+
     &.job {
         background: var(--color-job);
     }
+
     &.travel {
         background: var(--color-travel);
     }
+
     &.boat {
         background: var(--color-boat);
     }
+
     &.motorcycle {
         background: var(--color-motorcycle);
     }
+
     &.economy {
         background: var(--color-economy);
     }
+
     &.holiday {
         background: var(--color-holiday);
+    }
+}
+
+@media (min-width: 992px) {
+    #content {
+      height: 100vh;
+    }
+
+    .input-button {
+        display: flex;
+        flex-direction: row;
+        padding: 12px;
+    }
+
+    .button {
+        padding: 0px;
+    }
+  
+    .container-wrapper {
+      max-width: 682px;
+      font-size: 16px;
+      padding: 50px;
+      gap: 10px;
+    }
+  
+    .border {
+      margin-bottom: 16px;
+      padding: 24px;
+    }
+  
+    .search-map {
+      padding: 12px;
+    }
+    
+    .border:hover {
+      box-shadow: 0px 14px 16px var(--color-box-shadow-motorcycle);
+      background: var(--color-hover-map-font-and-background);
+    }
+
+    .button:hover {
+        background: var(--color-hover-button);
     }
 }
